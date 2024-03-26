@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A2C4C36C2BADBDE900291BC8 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4C36B2BADBDE900291BC8 /* MemorizeApp.swift */; };
-		A2C4C36E2BADBDE900291BC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4C36D2BADBDE900291BC8 /* ContentView.swift */; };
+		A2C4C36E2BADBDE900291BC8 /* EmojiMemorizeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4C36D2BADBDE900291BC8 /* EmojiMemorizeGameView.swift */; };
 		A2C4C3702BADBDEF00291BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C4C36F2BADBDEF00291BC8 /* Assets.xcassets */; };
 		A2C4C3732BADBDEF00291BC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C4C3722BADBDEF00291BC8 /* Preview Assets.xcassets */; };
 		A2C4C37D2BADBDEF00291BC8 /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4C37C2BADBDEF00291BC8 /* MemorizeTests.swift */; };
 		A2C4C3872BADBDEF00291BC8 /* MemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4C3862BADBDEF00291BC8 /* MemorizeUITests.swift */; };
 		A2C4C3892BADBDEF00291BC8 /* MemorizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4C3882BADBDEF00291BC8 /* MemorizeUITestsLaunchTests.swift */; };
+		A66C038F2BB1FEEB000E08B3 /* MemorizeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C038E2BB1FEEB000E08B3 /* MemorizeGame.swift */; };
+		A66C03912BB2033F000E08B3 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C03902BB2033F000E08B3 /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		A2C4C3682BADBDE900291BC8 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C4C36B2BADBDE900291BC8 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
-		A2C4C36D2BADBDE900291BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2C4C36D2BADBDE900291BC8 /* EmojiMemorizeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemorizeGameView.swift; sourceTree = "<group>"; };
 		A2C4C36F2BADBDEF00291BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C4C3722BADBDEF00291BC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2C4C3782BADBDEF00291BC8 /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		A2C4C3822BADBDEF00291BC8 /* MemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C4C3862BADBDEF00291BC8 /* MemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITests.swift; sourceTree = "<group>"; };
 		A2C4C3882BADBDEF00291BC8 /* MemorizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A66C038E2BB1FEEB000E08B3 /* MemorizeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeGame.swift; sourceTree = "<group>"; };
+		A66C03902BB2033F000E08B3 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		A2C4C36A2BADBDE900291BC8 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				A66C038E2BB1FEEB000E08B3 /* MemorizeGame.swift */,
+				A66C03902BB2033F000E08B3 /* EmojiMemoryGame.swift */,
 				A2C4C36B2BADBDE900291BC8 /* MemorizeApp.swift */,
-				A2C4C36D2BADBDE900291BC8 /* ContentView.swift */,
+				A2C4C36D2BADBDE900291BC8 /* EmojiMemorizeGameView.swift */,
 				A2C4C36F2BADBDEF00291BC8 /* Assets.xcassets */,
 				A2C4C3712BADBDEF00291BC8 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C4C36E2BADBDE900291BC8 /* ContentView.swift in Sources */,
+				A2C4C36E2BADBDE900291BC8 /* EmojiMemorizeGameView.swift in Sources */,
 				A2C4C36C2BADBDE900291BC8 /* MemorizeApp.swift in Sources */,
+				A66C038F2BB1FEEB000E08B3 /* MemorizeGame.swift in Sources */,
+				A66C03912BB2033F000E08B3 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +438,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +468,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
